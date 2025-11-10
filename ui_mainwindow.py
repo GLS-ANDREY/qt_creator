@@ -29,9 +29,9 @@ class Ui_MainWindow(object):
         self.action_print_HelloWorld.setObjectName(u"action_print_HelloWorld")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.pushButton = QPushButton(self.centralwidget)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(50, 130, 75, 24))
+        self.add = QPushButton(self.centralwidget)
+        self.add.setObjectName(u"add")
+        self.add.setGeometry(QRect(50, 130, 75, 24))
         self.listView = QListView(self.centralwidget)
         self.listView.setObjectName(u"listView")
         self.listView.setGeometry(QRect(240, 100, 256, 192))
@@ -39,6 +39,9 @@ class Ui_MainWindow(object):
         self.lineEdit = QLineEdit(self.centralwidget)
         self.lineEdit.setObjectName(u"lineEdit")
         self.lineEdit.setGeometry(QRect(100, 431, 351, 21))
+        self.delete_2 = QPushButton(self.centralwidget)
+        self.delete_2.setObjectName(u"delete_2")
+        self.delete_2.setGeometry(QRect(50, 160, 75, 24))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -61,8 +64,9 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.action_print_HelloWorld.setText(QCoreApplication.translate("MainWindow", u"HelloWorld2", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c", None))
+        self.add.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c", None))
         self.lineEdit.setText("")
+        self.delete_2.setText(QCoreApplication.translate("MainWindow", u"\u0423\u0434\u0430\u043b\u0438\u0442\u044c", None))
         self.menu_HelloWorld_print.setTitle(QCoreApplication.translate("MainWindow", u"HelloWorld", None))
     # retranslateUi
 
